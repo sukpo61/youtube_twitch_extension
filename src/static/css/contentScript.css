@@ -1,46 +1,52 @@
+html[twitch_default] ytd-watch-flexy {
+  display: grid !important;
+  grid-template-columns: 1fr auto !important;
+  height: calc(100vh - 56px) !important;
+  /* align-items: center !important;
+  justify-content: center !important; */
+
+  /* display: flex !important; */
+}
+
+html[twitch_default] #columns {
+  min-width: 0px !important;
+  padding-top: 0px !important;
+  grid-column: 2;
+  grid-row: 1;
+  overflow-y: scroll;
+  height: calc(100vh - 56px) !important;
+  max-width: 448px !important;
+}
+
 html[twitch_default] #primary {
+  max-width: 448px !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 12px 0 12px !important;
+  height: 100% !important;
+}
+
+html[twitch_default] #secondary {
   display: none;
 }
-html[twitch_default] #below {
-  padding: 0 12px !important;
-  background-color: white !important;
-}
-html[twitch_default] .watch-active-metadata {
-  margin: 12px 0 !important;
-}
-html[twitch_default] #secondary {
-  overflow-y: scroll;
-  height: calc(100vh - 56px);
-  padding: 0 12px 0 12px !important;
-  margin: 0 !important;
-}
-html[twitch_default] ytd-watch-flexy {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: center !important;
-}
+
 html[twitch_default] #full-bleed-container {
-  overflow-y: scroll;
-  display: flex !important;
-  flex-direction: column !important;
+  grid-column: 1;
+  grid-row: 1;
   max-height: none !important;
   height: calc(100vh - 56px) !important;
 }
 /* //79 */
 html[twitch_default] #player-full-bleed-container {
-  width: 100% !important;
-  height: calc(100vh - 159px) !important;
-  flex: none !important;
+  height: calc(100vh - 56px) !important;
+  max-height: none !important;
+  /* grid-column: 1;
+  grid-row: 1; */
 }
+
 html[twitch_default] #player-container {
   width: 100% !important;
   height: 100% !important;
-}
-
-html[twitch_default] .ytp-chrome-bottom {
-}
-
-html[twitch_default] .ytp-chapter-hover-container {
 }
 
 html[twitch_default] #ytd-player {
@@ -50,25 +56,27 @@ html[twitch_default] #ytd-player {
 html[twitch_default] #columns {
   margin: 0 !important;
 }
-html[twitch_default] #secondary-inner {
-  display: none !important;
-}
-
-html[twitch_default] #description {
-  margin-top: 0 !important;
-}
-
 html[twitch_default] #full-bleed-container::-webkit-scrollbar,
 html[twitch_default]::-webkit-scrollbar {
   display: none;
 }
 
-html[twitch_default] #secondary::-webkit-scrollbar {
+html[twitch_default] #primary::-webkit-scrollbar {
   width: 8px;
   height: 5px;
 }
 
-html[twitch_default] #secondary::-webkit-scrollbar-thumb {
+html[twitch_default] #primary::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #909090;
+}
+
+html[twitch_default] #columns::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+html[twitch_default] #columns::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #909090;
 }

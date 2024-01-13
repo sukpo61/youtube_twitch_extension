@@ -142,6 +142,43 @@ const App: React.FC<{}> = () => {
 
       {/* full-bleed */}
       <div></div>
+      {/* <button
+        className="ytp-size-button ytp-button"
+        aria-keyshortcuts="t"
+        data-priority="7"
+        data-title-no-tooltip="기본 보기"
+        aria-label="기본 보기 단축키 t"
+        title="기본 보기(t)"
+      >
+        <svg height="100%" version="1.1" viewBox="0 0 36 36" width="100%">
+          <use className="ytp-svg-shadow" xlink:href="#ytp-id-57"></use>
+          <path
+            d="m 26,13 0,10 -16,0 0,-10 z m -14,2 12,0 0,6 -12,0 0,-6 z"
+            fill="#fff"
+            fill-rule="evenodd"
+            id="ytp-id-57"
+          ></path>
+        </svg>
+      </button>
+
+      <button
+        class="ytp-size-button ytp-button"
+        aria-keyshortcuts="t"
+        data-priority="7"
+        data-title-no-tooltip="영화관 모드"
+        aria-label="영화관 모드 단축키 t"
+        title="영화관 모드(t)"
+      >
+        <svg height="100%" version="1.1" viewBox="0 0 36 36" width="100%">
+          <use class="ytp-svg-shadow" xlink:href="#ytp-id-62"></use>
+          <path
+            d="m 28,11 0,14 -20,0 0,-14 z m -18,2 16,0 0,10 -16,0 0,-10 z"
+            fill="#fff"
+            fill-rule="evenodd"
+            id="ytp-id-62"
+          ></path>
+        </svg>
+      </button> */}
     </>
   );
 };

@@ -23,7 +23,7 @@
       "matches": ["https://*.youtube.com/watch*"],
       "js": ["contentScript.js"],
       "css": ["css/contentScript.css"],
-      "run_at": "document_idle"
+      "run_at": "document_end"
     }
   ],
   "host_permissions": ["<all_urls>"]
