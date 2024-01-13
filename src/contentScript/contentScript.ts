@@ -20,21 +20,25 @@ const setHtmlAttribute = (state) => {
   html.removeAttribute("twitch_default");
 };
 
-const enterTwichLayout = () => {
+const isFullBleed = () => {
   const sizeButton: HTMLElement = document.getElementById(
     "player-full-bleed-container"
   );
   const value = !!sizeButton?.children[1];
-  setHtmlAttribute(value);
-  chrome.storage.local.set({ isOn: value });
+  return value;
+};
+
+const enterTwichLayout = () => {
+  setHtmlAttribute(isFullBleed());
 };
 
 const toggleTwichLayout = () => {
-  chrome.storage.local.get(["isOn"], (result) => {
-    let value = !result.isOn;
-    chrome.storage.local.set({ isOn: value });
-    setHtmlAttribute(value);
-  });
+  setHtmlAttribute(!isFullBleed());
+
+  // chrome.storage.local.get(["isOn"], (result) => {
+  //   let value = !result.isOn;
+  //   chrome.storage.local.set({ isOn: value });
+  // });
 };
 
 const addEventToSizeButton = () => {

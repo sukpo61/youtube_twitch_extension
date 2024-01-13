@@ -1,21 +1,22 @@
+html[twitch_default] {
+  overflow-y: hidden;
+}
+
 html[twitch_default] ytd-watch-flexy {
   display: grid !important;
   grid-template-columns: 1fr auto !important;
   height: calc(100vh - 56px) !important;
-  /* align-items: center !important;
-  justify-content: center !important; */
-
-  /* display: flex !important; */
 }
 
 html[twitch_default] #columns {
+  width: 448px !important;
+  max-width: 448px !important;
   min-width: 0px !important;
   padding-top: 0px !important;
   grid-column: 2;
   grid-row: 1;
   overflow-y: scroll;
   height: calc(100vh - 56px) !important;
-  max-width: 448px !important;
 }
 
 html[twitch_default] #primary {
@@ -40,8 +41,6 @@ html[twitch_default] #full-bleed-container {
 html[twitch_default] #player-full-bleed-container {
   height: calc(100vh - 56px) !important;
   max-height: none !important;
-  /* grid-column: 1;
-  grid-row: 1; */
 }
 
 html[twitch_default] #player-container {
